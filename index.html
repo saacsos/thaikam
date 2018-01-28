@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test from google apps script</title>
+  </head>
+  <body>
+    <div class="output-get">
+      Get data
+    </div>
+
+    <div class="output-post">
+      Post data
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var url = 'https://script.google.com/a/ku.th/macros/s/AKfycbzUZWQ5jHNnsWlsEC6ISX693G1byAG_r_0lceZO5oc_/dev?q=10';
+        $.ajax({
+          method: 'GET',
+          crossDomain: true,
+          dataType: 'jsonp',
+          url: url,
+          success: function (data) {
+            $('.output-get').html(JSON.stringify(data));
+            console.log(data);
+          }
+        });
+
+        $.ajax({
+          method: 'POST',
+          dataType: 'jsonp',
+          url: url,
+          success: function (data) {
+            $('.output-post').html(data.success);
+            console.log(data);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
