@@ -1,0 +1,53 @@
+.q-wd {
+  width: 100%;
+  text-align: center;
+  margin: 200px 0 100px 0;
+}
+
+.q-wd .q-ch {
+  width: 40px;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 2.2em;
+  border-bottom: 1px solid #909090;
+
+}
+
+.q-wd .q-ch.pos-1 {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -70px;
+  padding: 1px 10px;
+}
+
+.q-wd .q-ch.pos-2 {
+  position: absolute;
+  margin-top: -95px;
+  margin-left: -70px;
+  padding: 0 10px;
+}
+
+.q-wd .ch-close {
+  background-color: #909090;
+}
+
+.get-char, .a-btn{
+  text-align: center;
+}
+
+.a-wd, .summary {
+  font-size: 2em;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.a-wd input.a-wd-input {
+  padding: 20px 3px;
+  height: 1.3em;
+}
+
+.get-char button, .a-btn button {
+  font-size: 2.0em;
+  padding: 10px 40px;
+}
